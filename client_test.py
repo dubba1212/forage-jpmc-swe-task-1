@@ -27,8 +27,8 @@ class ClientTest(unittest.TestCase):
   def calculatePriceBidGreaterThanAskquotes(quotes):
     result = []
     for quote in quotes:
-      bid_price = quote.get('top_bid_price', 0)  # Get the bid price (default to 0 if not present)
-      ask_price = quote.get('top_ask_price', 0)  # Get the ask price (default to 0 if not present)
+      bid_price = quote.get('top_bid_price', 0)
+      ask_price = quote.get('top_ask_price', 0)
 
       if bid_price > ask_price:
         # Calculate the price when bid is greater than ask
